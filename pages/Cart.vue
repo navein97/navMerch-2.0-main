@@ -24,21 +24,21 @@
                   >
                     <div class="d-flex align-center bg-primary rounded">
                       <span
-                        class="icon d-flex align-center pa-3"
-                        style="cursor: pointer"
-                        @click="cartStore.add(item.id)"
-                      >
-                        <v-icon> mdi-plus </v-icon>
-                      </span>
-                      <span class="number d-flex align-center pa-3">
-                        {{ item.quantity }}
-                      </span>
-                      <span
                         style="cursor: pointer"
                         class="icon d-flex align-center pa-3"
                         @click="cartStore.remove(item.id)"
                       >
                         <v-icon> mdi-minus </v-icon>
+                      </span>
+                      <span class="number d-flex align-center pa-3">
+                        {{ item.quantity }}
+                      </span>
+                      <span
+                        class="icon d-flex align-center pa-3"
+                        style="cursor: pointer"
+                        @click="cartStore.add(item.id)"
+                      >
+                        <v-icon> mdi-plus </v-icon>
                       </span>
                     </div>
                     <p>

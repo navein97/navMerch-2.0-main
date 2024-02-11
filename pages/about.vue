@@ -15,7 +15,7 @@
         <p>{{ aboutText }}</p>
 
         <ul class="team-list">
-          <li v-for="member in teamMembers" :key="member.id">
+          <p v-for="member in teamMembers" :key="member.id">
             <img
               :src="member.image"
               :alt="member.name"
@@ -25,7 +25,7 @@
               <h3>{{ member.name }}</h3>
               <p>{{ member.role }}</p>
             </div>
-          </li>
+          </p>
         </ul>
       </div>
 
@@ -34,12 +34,12 @@
         <p>{{ aboutText }}</p>
         <p>Questions about our designs or sizing? We're happy to help!</p>
         <ul class="contact-list">
-          <li>
+          <p>
             <a href="mailto:{{ email }}">Email: {{ email }}</a>
-          </li>
-          <li>
+          </p>
+          <p>
             <a :href="`tel:{{phoneNumber}}`">Phone: {{ phoneNumber }}</a>
-          </li>
+          </p>
         </ul>
       </div>
     </div>
@@ -68,9 +68,9 @@ const teamMembers = ref([
   },
   {
     id: 3,
-    name: "John Doe",
+    name: "Navein",
     role: "Developer",
-    image: "https://franchisematch.com/wp-content/uploads/2015/02/john-doe.jpg",
+    image: "https://media.licdn.com/dms/image/D5603AQG57z4z9M5q-Q/profile-displayphoto-shrink_800_800/0/1697019767005?e=1713398400&v=beta&t=bOCX6WoOPL-K01x9pZB0v3QpVer69yOoPPrppjqGtq8",
   },
   // ... more team members
 ]);

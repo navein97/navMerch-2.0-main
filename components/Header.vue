@@ -1,6 +1,6 @@
 <template>
   <v-app-bar>
-    <v-toolbar-title @click="$router.push('/products')">
+    <v-toolbar-title @click="$router.push('/')">
       Navein's Merch Website
     </v-toolbar-title>
     <v-btn class="btn2" @click="$router.push('/')">Home</v-btn>
@@ -27,7 +27,7 @@ const cartStore = useCartStore();
 }
 
 .btn2:hover {
-  border-bottom: 3px solid aquamarine;
+  border-bottom: 3px solid #e53935;
   padding-bottom: 5px; /* Add bottom padding */
 } /* Aquamarine underline on hover */
 

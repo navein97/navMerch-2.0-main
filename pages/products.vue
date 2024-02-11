@@ -25,7 +25,7 @@
             sm="6"
           >
             <v-card class="mx-auto pb-2">
-              <v-img :src="product.image" height="200px" cover>
+              <v-img :src="product.image" height="200px" object-fit="contain">
                 <template v-slot:placeholder>
                   <v-row
                     align="center"
@@ -58,7 +58,7 @@
         </v-row>
         <v-row v-show="!grid" v-for="(product, i) in products" :key="i">
           <v-col cols="4">
-            <v-img :src="product.image" height="200px" cover>
+            <v-img :src="product.image" height="200px" object-fit="contain">
               <template v-slot:placeholder>
                 <v-row align="center" class="fill-height ma-0" justify="center">
                   <v-progress-circular
