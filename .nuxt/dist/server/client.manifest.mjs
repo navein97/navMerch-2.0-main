@@ -1,0 +1,1 @@
+export { default } from "file:///Users/naveinthirankulaendran/Downloads/navMerch-2.0-main/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
